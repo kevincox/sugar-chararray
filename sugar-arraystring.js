@@ -21,17 +21,19 @@
 *  3. This notice may not be removed or altered from any source distribution.  *                                                           *
 *                                                                              *
 *******************************************************************************/
-
-Object.getOwnPropertyNames(Array).each(function(n)
+Object.getOwnPropertyNames(Array.prototype).sort().each(function(n)
 {
-	//console.log(n, Object.isFunction(n), typeof String[n] == "undefined");
 	var funcs = {};
-	if ( Object.isFunction(Array[n]) && typeof String[n] == "undefined" )
+	if ( typeof Array.prototype[n]  == "function" &&
+	     typeof String.prototype[n] == "undefined" )
 	{
 		funcs[n] = function()
 		{
+			console.log("Called", n);
 			var c = this.chars();
-			return c[n].apply(c, arguments).join("");
+			var r = c[n].apply(c, arguments);
+			if (Object.isArray(r)) r = r.join("");
+			return r;
 		};
 	}
 	String.extend(funcs);

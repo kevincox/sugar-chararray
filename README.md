@@ -6,7 +6,9 @@ Sugar array methods ON STRINGS!
 
 Run the file however you wish.  Then simply call array methods on strings.
 
-     "aewee5beb5h".sort()
+```js
+"aewee5beb5h".sort()
+```
 
 Just note that while some array methods change the original the string versions
 always return a new string.

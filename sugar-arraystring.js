@@ -29,7 +29,6 @@ Object.getOwnPropertyNames(Array.prototype).sort().each(function(n)
 	{
 		funcs[n] = function()
 		{
-			console.log("Called", n);
 			var c = this.chars();
 			var r = c[n].apply(c, arguments);
 			if (Object.isArray(r)) r = r.join("");

@@ -1,0 +1,21 @@
+{
+  "name": "sugar-arraystring",
+  "version": "0.0.0",
+  "description": "Alls all array methods to strings.",
+  "main": "sugar-arraystring.js",
+  "scripts": {
+    "test": "echo 'Error: no test specified' && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/kevincox/sugar-stringarray.git"
+  },
+  "keywords": [
+    "sugar",
+    "array",
+    "string"
+  ],
+  "author": "Kevin Cox <kevincox.ca@gmail.com>",
+  "license": "zlib",
+  "readmeFilename": "README.md"
+}

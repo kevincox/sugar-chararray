@@ -1,14 +1,14 @@
 {
-  "name": "sugar-arraystring",
+  "name": "sugar-chararray",
   "version": "0.0.0",
   "description": "Alls all array methods to strings.",
-  "main": "sugar-arraystring.js",
+  "main": "sugar-chararray.js",
   "scripts": {
     "test": "echo 'Error: no test specified' && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/kevincox/sugar-stringarray.git"
+    "url": "git://github.com/kevincox/sugar-chararray.git"
   },
   "keywords": [
     "sugar",
